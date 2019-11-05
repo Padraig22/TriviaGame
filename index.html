@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Totally Trivia Trivia!</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <script src="assets/javascript/app.js"></script>
+
+    <script src="jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body class="text-center">
+
+    <div id="container">
+        <h1>Totally Trivial Trivia!</h1>
+
+        <button class="thebuttons" id="start-button">Start</button>
+
+        <div id="questionnaire">
+            <div class="counting-down" id="time-remaining">Time Remaining: <span class="counting-down"
+                    id="timer"></span> seconds</div>
+            <br /><br /><br /><br />
+
+            <div id="question-1">
+                <h3>Which AFL team won the 2019 grand final?</h3>
+                <br />
+                <input type="radio" class="q-one" value="wrong" name="q1">Collingwood
+                <input type="radio" class="q-one" value="wrong" name="q1">Hawthorn
+                <input type="radio" class="q-one" value="correct" name="q1">Richmond
+                <input type="radio" class="q-one" value="wrong" name="q1">Fermantle
+            </div>
+            <br /><br />
+            <div id="question-2">
+                <h3>Which AFL team won the 2018 grand final?</h3>
+                <br />
+                <input type="radio" class="q-two" value="wrong" name="q2">Sydney swans
+                <input type="radio" class="q-two" value="correct" name="q2">West Coast
+                <input type="radio" class="q-two" value="wrong" name="q2">St Kilda
+                <input type="radio" class="q-two" value="wrong" name="q2">Adelaide
+            </div>
+            <br /><br />
+            <div id="question-3">
+                <h3>Which AFL team won the 2017 grand final?</h3>
+                <br />
+                <input type="radio" class="q-three" value="wrong" name="q3">Brisbane Lions
+                <input type="radio" class="q-three" value="wrong" name="q3">Carlton
+                <input type="radio" class="q-three" value="wrong" name="q3">Essendon
+                <input type="radio" class="q-three" value="correct" name="q3">Richmond
+            </div>
+            <br /><br />
+            <div id="question-4">
+                <h3>Which AFL team won the 2016 grand final?</h3>
+                <br />
+                <input type="radio" class="q-four" value="correct" name="q4">Western Bulldogs
+                <input type="radio" class="q-four" value="wrong" name="q4">North Melbourne
+                <input type="radio" class="q-four" value="wrong" name="q4">Geelong
+                <input type="radio" class="q-four" value="wrong" name="q4">Port Adelaide
+            </div>
+            <br /><br />
+            <div id="question-5">
+                <h3>Which AFL team won the 2015 grand final?</h3>
+                <br />
+                <input type="radio" class="q-five" value="wrong" name="q5">St Kilda
+                <input type="radio" class="q-five" value="wrong" name="q5">Collingwood
+                <input type="radio" class="q-five" value="wrong" name="q5">Adelaide
+                <input type="radio" class="q-five" value="correct" name="q5">Hawthorn
+            </div>
+            <br /><br />
+            <div id="question-6">
+                <h3>Which AFL team won the 2014 grand final?</h3>
+                <br />
+                <input type="radio" class="q-six" value="wrong" name="q6">Western Bulldogs
+                <input type="radio" class="q-six" value="wrong" name="q6">Carlton
+                <input type="radio" class="q-six" value="correct" name="q6">Melbourne
+                <input type="radio" class="q-six" value="wrong" name="q6">Hawthorn
+            </div>
+            <br /><br />
+            <div id="question-7">
+                <h3>Which AFL team won the 2013 grand final?</h3>
+                <br />
+                <input type="radio" class="q-seven" value="correct" name="q7">Hawthorn
+                <input type="radio" class="q-seven" value="wrong" name="q7">Fermantle
+                <input type="radio" class="q-seven" value="wrong" name="q7">Richmond
+                <input type="radio" class="q-seven" value="wrong" name="q7">West Coast
+            </div>
+            <br /><br />
+            <div id="question-8">
+                <h3>Which AFL team won the 2012 grand final?</h3>
+                <br />
+                <input type="radio" class="q-eight" value="wrong" name="q8">Hawthorn
+                <input type="radio" class="q-eight" value="wrong" name="q8">Essendon
+                <input type="radio" class="q-eight" value="correct" name="q8">Sydney swans
+                <input type="radio" class="q-eight" value="wrong" name="q8">North Melbourne
+            </div>
+            <button class="thebuttons" id="done-button">Done</button>
+        </div>
+
+    </div>
+    <div id="results-page">
+        <h2>All Done!</h2>
+        <br />
+        <p>Correct Answers: <span id="correct-score"></span></p>
+        <p>Incorrect Answers: <span id="incorrect-score"></span></p>
+        <p>Unanswered: <span id="unanswered-score"></span></p>
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
